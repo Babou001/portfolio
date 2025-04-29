@@ -146,7 +146,7 @@ with col1:
         **Technologies** : `Pandas` et `NumPy` (préparation des données), `Scikit-Learn` (modèles de classification), `Matplotlib` / `Seaborn` (visualisation des distributions), `Docker` (conteneurisation).  
         ''')
 
-st.markdown('''##### *:green[Précision] : J'ai travaillé sur d'autres project comme :gray-badge[la reconnaissance faciale] , :gray-badge[des agents IA (avec langchain)] , :gray-badge[la détection d'objets] sur des images ...*''')
+st.markdown('''##### *:green[Précision] : J'ai travaillé sur d'autres projets comme :gray-badge[la reconnaissance faciale] , :gray-badge[des agents IA (avec langchain)] , :gray-badge[la détection d'objets] sur des images ...*''')
 # Pied de page
 st.markdown('---')
 st.markdown('© 2025 — Mon Portfolio IA')
