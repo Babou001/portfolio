@@ -107,18 +107,18 @@ with col3:
     st.markdown("- Redis | MySQL | MongoDB | PostgreSQL")
 
 # # Section Projets réalisés
-st.subheader("🚀 Projets réalisés", divider="red")
+st.subheader("🚀 Quelques projets réalisés (du développement au déploiement) 🚀", divider="red")
 col1, col2, col3 = st.columns(3)
 
 with col1:
     with col1:
         st.markdown('''
         ##### :green[Système de recherche de documents avec chatbot RAG intégré]
-        **Contexte** : Les ingénieurs d'IDEMIA consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
+        **Contexte** : Les ingénieurs de la division R&D d'Idemia consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
         **Objectif** : Améliorer l'accès à l'information et accroître la productivité des équipes.  \n
         **Solution** : Mise en place d'un **retriever** combinant BM25 (recherche lexicale) et BERT (recherche sémantique) pour identifier les passages pertinents.  
         Ces résultats alimentent un **générateur** LLaMA‑3.2‑3B (quantifié INT4) pour fournir des réponses contextualisées.  \n
-        **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (orchestration du pipeline RAG), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn` (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` (prétraitement et nettoyage des documents).
+        **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (chuncking, vectorisation (Bert) et orchestration du pipeline RAG ), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn` (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` (prétraitement et nettoyage des documents).
         ''')
 
     # Deuxième projet
@@ -146,7 +146,7 @@ with col1:
         **Technologies** : `Pandas` et `NumPy` (préparation des données), `Scikit-Learn` (modèles de classification), `Matplotlib` / `Seaborn` (visualisation des distributions), `Docker` (conteneurisation).  
         ''')
 
-st.markdown('''##### *:green[Précision] : J'ai travaillé sur d'autres projets comme :gray-badge[la reconnaissance faciale] , :gray-badge[des agents IA (avec langchain)] , :gray-badge[la détection d'objets] sur des images ...*''')
+st.markdown('''##### *:green[Précision] : J'ai travaillé aussi en équipe sur d'autres projets comme :gray-badge[la reconnaissance faciale] , :gray-badge[des agents IA (avec langchain)] , :gray-badge[la détection d'objets] sur des images ...*''')
 # Pied de page
 st.markdown('---')
 st.markdown('© 2025 — Mon Portfolio IA')
