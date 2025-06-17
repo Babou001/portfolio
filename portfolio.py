@@ -358,7 +358,7 @@ with col6.container(border=True):
 col7, _ = st.columns(2)
 with col7.container(border=True):
     st.image(
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIII4-JbnI6vOpWEfDOS3yAr7WY8FZI-E52w&s"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkJ0cLYXjxWs0OwP_ZFqHvP8G-zE-ldqcNg&s"
     )
     st.markdown(
         ''':blue-badge[Aix‑Marseille Université] :gray-badge[Vision par ordinateur] :green-badge[Détection d’ordures] '''
@@ -374,7 +374,7 @@ with col7.container(border=True):
 
     with st.popover("En savoir plus", use_container_width=True):
         st.image(
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIII4-JbnI6vOpWEfDOS3yAr7WY8FZI-E52w&s"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdkJ0cLYXjxWs0OwP_ZFqHvP8G-zE-ldqcNg&s"
         )
         st.markdown(
             '''
