@@ -3,19 +3,19 @@ import os
 from streamlit_lottie import st_lottie
 import time
 
-st.set_page_config(
-    page_title="Mon Portfolio IA",
-    page_icon="🧩",
-    layout="wide"
-)
+# ─── tout en haut de ton script ────────────────────────────────────────────────
+st.set_page_config(page_title="Portfolio – El hadji Babou SEYE", layout="wide")
 
-with open("style.css") as f:  # ou collez la chaîne ci-dessus
+with open("style.css") as f:  # injection du thème
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# ─── section « hero » ----------------------------------------------------------
+
 
 # Titre principal
 _, col, _ = st.columns(3)
 with col:
-    st.title("El hadji Babou SEYE :blue-badge[Ingénieur en IA 🧩] ")
+    st.title("El hadji Babou SEYE :blue-badge[Ingénieur&nbsp;en&nbsp;IA] :green-badge[Disponible] ")
     st_lottie(
         "https://lottie.host/09496426-41d5-46b7-877d-0d7784267d03/tJfDQQ1FWW.json",
         speed=1.0,
@@ -349,7 +349,7 @@ with col6.container(border=True):
             - `plot_df` : génération de graphes Matplotlib.  
             - **Router LLM** (*LangChain* `ToolSelector`) qui route la requête vers le bon tool.  
             - **Exécution** : appels Python protégés, rendu sous forme de tableau ou d’image.  
-            - **API** : micro-service `FastAPI` conteneurisé, déployé sur **AWS**.
+            - **API** : micro-service `FastAPI` .
 
             **Technologies** : `LangChain`, `pandas`, `Python`, `FastAPI`
             '''
@@ -358,7 +358,7 @@ with col6.container(border=True):
 col7, _ = st.columns(2)
 with col7.container(border=True):
     st.image(
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Recycle-bin_icon.svg/512px-Recycle-bin_icon.svg.png"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIII4-JbnI6vOpWEfDOS3yAr7WY8FZI-E52w&s"
     )
     st.markdown(
         ''':blue-badge[Aix‑Marseille Université] :gray-badge[Vision par ordinateur] :green-badge[Détection d’ordures] '''
@@ -374,7 +374,7 @@ with col7.container(border=True):
 
     with st.popover("En savoir plus", use_container_width=True):
         st.image(
-            "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*khqhowe9Nhek9dXk0ZlLtw.png"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIII4-JbnI6vOpWEfDOS3yAr7WY8FZI-E52w&s"
         )
         st.markdown(
             '''
