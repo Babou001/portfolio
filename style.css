@@ -1,0 +1,115 @@
+/* ---------- Variables (facile à personnaliser) ---------- */
+:root{
+  /* Palette “brand” */
+  --brand-1:#2e7cf6;
+  --brand-2:#1c55be;
+  --brand-3:#0d2e70;
+  /* Compléments */
+  --accent-green:#25c36f;
+  --accent-orange:#ff8a34;
+  --accent-red:#e64848;
+  /* Gris neutres (sera écrasé en dark-mode) */
+  --bg:#f8fafc;
+  --bg-alt:#ffffff;
+  --text:#1f2937;
+  --text-light:#475569;
+  --border:#e2e8f0;
+  --shadow:0 4px 12px rgba(0,0,0,.07);
+  --radius:12px;
+  --font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+/* ---------- Dark mode auto ---------- */
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0b1120;       /* corps de page */
+    --bg-alt:#f1f5f9;   /* cartes / conteneurs */
+    --text:#f1f5f9;
+    --text-light:#cbd5e1;
+    --border:#334155;
+    --shadow:0 4px 12px rgba(0,0,0,.45);
+  }
+}
+
+/* ---------- Réinitialisation minimale ---------- */
+html,body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);
+  font-size:15px;
+  line-height:1.6;
+}
+h1,h2,h3,h4,h5{
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:-.015em;
+}
+a{
+  color:var(--brand-1);
+  text-decoration:none;
+}
+a:hover{ color:var(--brand-2); }
+
+/* ---------- Conteneur principal ---------- */
+.block-container{
+  padding-top:1.5rem;
+  padding-bottom:3rem;
+}
+
+/* ---------- Cartes de projet ---------- */
+.stContainer, .st-container{               /* wrapper Streamlit */
+  background:var(--bg-alt);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:1.1rem 1.25rem 1.25rem;
+  margin-bottom:1.5rem;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.stContainer:hover, .st-container:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+/* ---------- Images dans les cartes ---------- */
+.stContainer img, .st-container img{
+  border-radius:calc(var(--radius) - 2px);
+  border:1px solid var(--border);
+  margin-bottom:.9rem;
+}
+
+/* ---------- Badges (année, tags) ---------- */
+.badges, .stMarkdown > p > .badge{ display:inline-flex; gap:.4rem; flex-wrap:wrap; }
+.badge, .stMarkdown > .badge{
+  font-size:.70rem;
+  font-weight:600;
+  padding:.25rem .55rem;
+  border-radius:999px;
+  background:var(--border);
+  color:var(--text);
+}
+.badge[style*="orange"]{ background:var(--accent-orange); color:#fff; }
+.badge[style*="green"]{  background:var(--accent-green);  color:#fff; }
+.badge[style*="red"]{    background:var(--accent-red);    color:#fff; }
+
+/* ---------- Popover (Streamlit 1.31+) ---------- */
+.stPopover{
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+  animation:fadeSlide .25s ease;
+}
+@keyframes fadeSlide{
+  from{ opacity:0; transform:translateY(-4px);}
+  to  { opacity:1; transform:translateY(0);}
+}
+
+/* ---------- Footer ---------- */
+footer{
+  border-top:1px solid var(--border);
+  margin-top:2.5rem !important;
+  padding-top:1.25rem;
+  font-size:.8rem;
+  color:var(--text-light);
+  text-align:center;
+}
