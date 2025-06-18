@@ -230,7 +230,7 @@ with col3:
                 - Séparation Train/Test par fichier pour éviter les fuites de données entre partitions.  
                 - Entraînement et comparaison de plusieurs modèles de classification (SVM, forêts aléatoires, réseaux de neurones).  
                 - Évaluation duale : précision par vecteur et par fichier (étiquette majoritaire).
-                - Interprétabilité des features : Analyse de l'importance de chaque features selon les attitudes sociales avec les valeurs de chapley.\n  
+                - Interprétabilité des features : Analyse de l'importance de chaque features selon les attitudes sociales avec les valeurs de Shapley.\n  
                 **Technologies** : `Pandas` et `NumPy` (préparation des données), `Scikit-Learn` (modèles de classification), `Matplotlib` / `Seaborn` (visualisation des distributions), `Docker` (conteneurisation), `OpenSmile & OpenFace` pour l'extraction des caractéristiques à partir des vidéos.  
             ''')
 
