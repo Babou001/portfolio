@@ -173,7 +173,7 @@ with col1:
                     **Objectif** : Améliorer l'accès à l'information et accroître la productivité des équipes.  \n
                     **Solution** : Mise en place d'un **retriever** combinant la recherche lexicale (avec BM25) et recherche sémantique pour identifier les passages pertinents.  
                     Ces résultats alimentent un **générateur** LLaMA‑3.2‑3B (quantifié INT6), avec `LlamaCPP`, pour fournir des réponses contextualisées.  \n
-                    **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (orchestration du pipeline RAG), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn`  (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` + `pymupdf` + `LangChain (RecursiveCharacterTextSplitter)` + `BERT` (extraction de textes et images, prétraitement et et nettoyage des textes, chuncking et vectorisation ) et `Chroma DB` pour le vectorstore.
+                    **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (orchestration du pipeline RAG), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn`  (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` + `pymupdf` + `LangChain (RecursiveCharacterTextSplitter)` + `BERT` (extraction de textes et images, prétraitement et nettoyage des textes, chuncking et vectorisation ) et `Chroma DB` pour le vectorstore.
                     ''')
 
 with col2:
