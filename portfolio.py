@@ -36,7 +36,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     with st.expander("Licence Informatique"):
-        st.image("https://th.bing.com/th?q=Aix-Marseille+Universit%c3%a9+Logo.jpg&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=fr-FR&cc=FR&setlang=fr&adlt=moderate&t=1&mw=247")
+        st.image("https://th.bing.com/th?q=Aix-Marseille+Universit%c3%a9+Logo.png&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=fr-FR&cc=FR&setlang=fr&adlt=moderate&t=1&mw=247")
         st.badge("2019 - 2022")
         st.markdown('''
         Spécialisée en informatique générale :
