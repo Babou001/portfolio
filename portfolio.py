@@ -49,10 +49,10 @@ with col1:
         ''')
 
 with col2:
-    with st.expander("Master IA & machine learning"):
+    with st.expander("Master de Recherche en IA & Machine/Deep Learning"):
         c1, c2 = st.columns(2)
         with c1:
-            st.image("https://upload.wikimedia.org/wikipedia/fr/f/f3/Aix-Marseille_Université_Logo_2024.png")
+            st.image("https://th.bing.com/th?q=Aix-Marseille+Universit%c3%a9+Logo.png&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=fr-FR&cc=FR&setlang=fr&adlt=moderate&t=1&mw=247")
         with c2:
             st.image("https://communitizz.studizz.fr/bm/uploads/school_209/Logo_ECM_10_2012_bleu_carré_réserve.jpg")
         st.badge("2022 - 2024")
