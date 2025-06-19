@@ -158,7 +158,7 @@ with col1:
         st.badge("2025", color="orange")
         st.markdown('''
                 ##### :green[Système de recherche de documents avec chatbot RAG intégré]
-                **Contexte** : Les ingénieurs d'IDEMIA consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
+                **Contexte** : Les ingénieurs d'IDEMIA du support CPS consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
                 ''')
         with st.popover("En savoir plus", use_container_width=True):
             st.image(
@@ -169,11 +169,11 @@ with col1:
             st.badge("2025", color="orange")
             st.markdown('''
                     ##### :green[Système de recherche de documents avec chatbot RAG intégré]
-                    **Contexte** : Les ingénieurs d'IDEMIA consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
+                    **Contexte** : Les ingénieurs d'IDEMIA du support CPS consacrent un temps important à la recherche d'informations dans les supports documentaires des outils utilisés.\n  
                     **Objectif** : Améliorer l'accès à l'information et accroître la productivité des équipes.  \n
                     **Solution** : Mise en place d'un **retriever** combinant BM25 (recherche lexicale) et BERT (recherche sémantique) pour identifier les passages pertinents.  
-                    Ces résultats alimentent un **générateur** LLaMA‑3.2‑3B (quantifié INT4) pour fournir des réponses contextualisées.  \n
-                    **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (orchestration du pipeline RAG), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn` (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` (prétraitement et nettoyage des documents).
+                    Ces résultats alimentent un **générateur** LLaMA‑3.2‑3B (quantifié INT6), avec `LlamaCPP`, pour fournir des réponses contextualisées.  \n
+                    **Technologies** : `Redis` (gestion de l'historique et des sessions), `LangChain` (orchestration du pipeline RAG), `Streamlit` (interface et gestion des sessions), `FastAPI` + `Uvicorn` (scalabilité), `Docker` (conteneurisation, déploiement on-premise), `spaCy` + `pymupdf` (prétraitement, chuncking et nettoyage des documents) et `Chroma DB` pour le vectorstore.
                     ''')
 
 with col2:
